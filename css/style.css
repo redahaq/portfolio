@@ -6,7 +6,7 @@
   --char: #cbe14b;
   --tangerine: #f38118;
   --charc: rgb(63, 57, 70);
-  --dusk: #e4a1ef;
+  --dusk: #d783e4;
 
   /* spacing variables: golden ratio */
   --space-xs: 0.382rem;
@@ -43,7 +43,7 @@ body {
   width: 100%;
   overflow: auto;
   font-size: var(--space-m);
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   padding-bottom: 2rem;
 }
@@ -71,21 +71,17 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--lapis);
+  transition: all 0.3s ease-in-out;
 }
 
-/* ..nav ul li a::after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  width: 0;
-  left: 50%;
-  height: 6px;
-  background-color: var(--dusk);
-  transition: width 0.3s ease;
-} */
+a:hover {
+  color: var(--lapis);
+  text-decoration: underline;
+}
 
 /* offset anchor link landing position to allow some white space */
-h2::before {
+h2:before {
   display: block;
   content: " ";
   margin-top: -5.5rem;
@@ -105,17 +101,10 @@ h2::before {
   position: relative;
   width: 70vw;
   margin-bottom: 4em;
-  /* height: fit-content; */
-  /* height: 754px; */
-  /* left: 168px; */
-  /* top: 97px; */
   background: rgba(255, 255, 255);
-  /* border: 4px solid #D2E94B; */
   box-shadow: -15px -15px 0px var(--lapis), 10px 10px 10px rgba(0, 0, 0, 0.144);
   padding: 2em;
   border: 1px solid var(--lapis);
-  /* display: flex;
-flex-direction: ; */
 }
 
 /* box v2 */
@@ -127,8 +116,7 @@ flex-direction: ; */
 }
 
 .work {
-  /* background: var(--lapis); */
-  color: var(--char); /* width: 100%; */
+  color: var(--char);
 }
 
 .contact {
@@ -145,6 +133,7 @@ flex-direction: ; */
 .testimonial {
   border: 1px solid var(--lapis);
 }
+
 .testimonial,
 .testimonial > h1 {
   color: var(--char);
@@ -157,30 +146,20 @@ flex-direction: ; */
 }
 
 .parallax {
-  /* The image used */
   background-image: url("../assets/reda-balloons2.png");
-
-  min-height: 25rem;
-
-  /* Create the parallax scrolling effect */
+  min-height: 27rem;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* .article {
-     width: 50vw;
- } */
-
 .project-article {
   display: flex;
   flex-direction: column;
   width: 100%;
-  color: var(--lapis);
   font-size: 1.2em;
-  /* box-shadow: 0.3em 0.3em var(--dusk); */
-  border: 1px solid var(--dusk);
+  border: 1px solid var(--charc);
   background: white;
 }
 
@@ -213,6 +192,23 @@ flex-direction: ; */
   flex-direction: column;
 }
 
+.contact-wrapper > a {
+  font-size: var(--space-l);
+  padding: var(--space-m);
+}
+
+.headshot-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.fa,
+.far,
+.fas,
+.fab {
+  padding-right: 1em;
+}
+
 .figure {
   /* float: right; */
   height: 60vh;
@@ -234,7 +230,7 @@ flex-direction: ; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
 }
 
 .leaf-green {
@@ -260,7 +256,7 @@ flex-direction: ; */
 .headshot {
   height: 50vh;
   width: auto;
-  box-shadow: -15px -15px 0px var(--dusk), 10px 10px 10px rgba(0, 0, 0, 0.144);
+  /* box-shadow: -15px -15px 0px var(--dusk), 10px 10px 10px rgba(0, 0, 0, 0.144); */
   border: 1px solid var(--dusk);
 }
 
@@ -273,6 +269,7 @@ h2 {
 h1 {
   margin-top: var(--space-xl);
   color: var(--lapis);
+  /* color: var(--charc); */
 }
 
 h2 {
@@ -280,10 +277,26 @@ h2 {
   margin-bottom: 0.5em;
 }
 
+
 header > h2 {
   font-size: 4em;
-  color: var(--charc);
   flex-wrap: wrap;
+  color: var(--charc);
+}
+
+/* choose between charc and multi-coloured h2 header text  */
+header > h2:hover {
+  background: -webkit-linear-gradient(
+    16.3deg,
+    var(--dusk) 10%,
+    var(--lapis) 20.65%,
+    var(--lapis) 35%,
+    var(--tangerine) 55.65%,
+    var(--tangerine) 60.52%,
+    rgb(160, 187, 25) 70.65%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -294,6 +307,19 @@ p {
 
 .tagline {
   width: 50vw;
+}
+
+footer {
+  padding: 2rem 0rem 2rem 0rem;
+  background-color: var(--charc);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+footer > h3 {
+  color: rgb(229, 226, 226);
+  font-size: 0.8rem;
 }
 
 button {
