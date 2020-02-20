@@ -158,10 +158,12 @@ h2:before {
 .project-article {
   display: flex;
   flex-direction: column;
-  width: 100%;
   font-size: 1.2em;
   border: 1px solid var(--charc);
   background: white;
+  width: 25rem;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 .project-image-container {
@@ -197,11 +199,13 @@ h2:before {
 .contact-wrapper > a {
   font-size: var(--space-l);
   padding: var(--space-m);
+  flex-wrap: nowrap;
 }
 
 .headshot-wrapper {
   display: flex;
   align-items: flex-end;
+  width: 30vw;
 }
 
 .fa,
@@ -227,6 +231,10 @@ h2:before {
   min-width: 4em;
   padding: 0 1em 1em 0;
   opacity: 0.6;
+}
+
+.codewars-icon {
+  margin-right: 1em;
 }
 
 .stack {
@@ -256,11 +264,15 @@ h2:before {
   mix-blend-mode: difference;
 }
 
+.R-logoMob {
+  display: none;
+}
+
 .headshot {
-  height: 50vh;
-  width: auto;
+  width: 100%;
+  height: auto;
   /* box-shadow: -15px -15px 0px var(--dusk), 10px 10px 10px rgba(0, 0, 0, 0.144); */
-  border: 1px solid var(--dusk);
+  border: 1px solid var(--charc);
 }
 
 h1,
@@ -404,11 +416,61 @@ span.waving {
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 800px) {
+  .R-logo {
+    display: none;
+  }
+
+  .R-logoMob {
+    display: inline-block;
+  }
+
   .project-article {
-    width: 25rem;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    /* padding: 1em; */
+    width: 100%;
+  }
+
+  .figure {
+    display: none;
+  }
+
+  .header,
+  .about,
+  .testimonial,
+  .work,
+  .notes,
+  .contact {
+    padding: 1rem;
+    width: 85vw;
+  }
+
+  .header > h2 {
+    font-size: 3em;
+  }
+
+  .tagline {
+    width: 100%;
+  }
+
+  .testimonial > h1 {
+    font-size: 2em;
+  }
+
+  .contact-wrapper > a {
+    font-size: 1.5em;
+    padding: 0em 0em 0.5em 0em;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .headshot-wrapper {
+    width: 60vw;
+    align-self: center;
+  }
+
+  .project-article {
+    margin-right: 0em;
+    margin-bottom: 0.5em;
   }
 }
