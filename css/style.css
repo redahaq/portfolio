@@ -273,7 +273,6 @@ h2:before {
   height: auto;
   /* box-shadow: -15px -15px 0px var(--dusk), 10px 10px 10px rgba(0, 0, 0, 0.144); */
   border: 1px solid var(--charc);
-  /* object-fit: cover; */
 }
 
 h1,
@@ -467,12 +466,11 @@ span.waving {
 
   .headshot-wrapper {
     width: 60vw;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
   }
 
   .project-article {
     margin-right: 0em;
-    margin-bottom: 0em;
+    margin-bottom: 0.5em;
   }
 }
