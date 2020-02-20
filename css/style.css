@@ -103,7 +103,7 @@ h2:before {
   margin-bottom: 4em;
   background: rgba(255, 255, 255);
   box-shadow: -15px -15px 0px var(--lapis), 10px 10px 10px rgba(0, 0, 0, 0.144);
-  padding: 2em;
+  padding: 6rem;
   border: 1px solid var(--lapis);
 }
 
@@ -117,6 +117,7 @@ h2:before {
 
 .work {
   color: var(--char);
+  padding: 2rem;
 }
 
 .contact {
@@ -184,6 +185,7 @@ h2:before {
 .project-article > p,
 .project-article > a {
   padding-left: 1em;
+  padding-right: 1em;
   font-size: 0.9em;
 }
 
@@ -215,13 +217,14 @@ h2:before {
   position: absolute;
   /* width: 429.05px;
     height: 643px; */
-  left: 900px;
-  top: 84px;
-  z-index: 2;
+  right: -5em;
+  top: 4em;
+  z-index: 0;
 }
 
 .ts-logo {
   width: 9%;
+  min-width: 4em;
   padding: 0 1em 1em 0;
   opacity: 0.6;
 }
@@ -277,7 +280,6 @@ h2 {
   margin-bottom: 0.5em;
 }
 
-
 header > h2 {
   font-size: 4em;
   flex-wrap: wrap;
@@ -307,6 +309,7 @@ p {
 
 .tagline {
   width: 50vw;
+  z-index: 1;
 }
 
 footer {
@@ -354,6 +357,7 @@ button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 3px solid var(--lapis);
   color: var(--lapis);
+  background: white;
 }
 
 span.waving {
