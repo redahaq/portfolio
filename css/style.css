@@ -198,7 +198,7 @@ h2:before {
 
 .contact-wrapper > a {
   font-size: var(--space-l);
-  padding: var(--space-m);
+  padding: 0.5em;
   flex-wrap: nowrap;
 }
 
