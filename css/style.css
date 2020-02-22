@@ -256,12 +256,21 @@ h2:before {
   top: 33rem;
 }
 
-.R-logo {
+.R-logo,
+.R-logo-hover {
   position: fixed;
   top: 6rem;
-  left: calc(9% - 80px);
+  left: 2em;
   z-index: 10;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
+}
+
+.R-logo:hover {
+  opacity: 0;
+}
+
+.R-logo-hover {
+  z-index: 9;
 }
 
 .R-logoMob {
@@ -325,8 +334,9 @@ p {
 }
 
 footer {
-  padding: 2rem 0rem 2rem 0rem;
-  background-color: var(--charc);
+  padding: 1rem 0rem 1rem 0rem;
+  /* background-color: var(--lapis); */
+  background-color: #263547;
   width: 100vw;
   display: flex;
   justify-content: center;
