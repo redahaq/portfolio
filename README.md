@@ -4,14 +4,11 @@
 
 Tech Stack: HTML and CSS :eyes:
 
+A simple one-pager portfolio to showcase who I am and what I do
+
 ## To Do
 - optimise images
-- add hover-images w/ transition
 - add links to site on project image
 - add line about other projects
-- add figma prototype / design links
-- add short description of project
-- make responsive
 - add more leaves
-- add R-logo hover
 
