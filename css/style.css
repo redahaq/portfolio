@@ -159,7 +159,7 @@ h2:before {
   display: flex;
   flex-direction: column;
   font-size: 1.2em;
-  border: 1px solid var(--charc);
+  border: 1px solid rgb(174, 166, 212);
   background: white;
   width: 25rem;
   margin-right: 1em;
@@ -280,8 +280,7 @@ h2:before {
 .headshot {
   width: 100%;
   height: auto;
-  /* box-shadow: -15px -15px 0px var(--dusk), 10px 10px 10px rgba(0, 0, 0, 0.144); */
-  border: 1px solid var(--charc);
+  border: 1px solid rgb(174, 166, 212);
 }
 
 h1,
@@ -427,9 +426,14 @@ span.waving {
 }
 
 @media (max-width: 800px) {
-  .R-logo {
+  .R-logo,
+  .R-logo-hover {
     display: none;
   }
+
+  .R-logo:hover {
+    opacity: 0;
+  }  
 
   .R-logoMob {
     display: inline-block;
@@ -482,5 +486,7 @@ span.waving {
   .project-article {
     margin-right: 0em;
     margin-bottom: 0.5em;
+    border-bottom: 1px solid rgb(174, 166, 212);
+
   }
 }
